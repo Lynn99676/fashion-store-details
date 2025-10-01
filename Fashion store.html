@@ -1,0 +1,154 @@
+<!D0CTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Fashion store</title>
+        <style>
+            body{
+                font-family:Arial,sans-serif;
+                margin:0;
+                padding:0;
+                background:fdfdfd;
+            }
+            header{
+                background:#222;
+                color:#fff;
+                padding:20px;
+                text-align:center;
+            }
+            nav{
+                background:#444;
+                padding:10px;
+                text-align:center;
+            }
+            nav a{
+                color:white;
+                margin:0 15px;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            nav a:hover{
+                color:#ffcc00;
+            }
+            .container{
+                padding: 20px;
+            }
+            .products{
+                display:grid ;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap:20px;
+            }
+            .product{
+                border: 1px solid #ddd;
+                border-radius:10px;
+                padding: 10px;
+                text-align: center;
+                background:#fff;
+                transition:0.3s;
+            }
+            .product:hover{
+                box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+            }
+            .product img{
+                width: 100%;
+                height:200px;
+                object-fit:cover;
+                border-radius: 10px;
+            }
+            h2{
+                margin: top 40px;
+                color:#333;
+                text-align: center;
+            }
+            table{
+                width: 100%;
+                border-collapse: collapse;
+                margin:20px auto;
+            }
+            table,th,td{
+                border:1px solid #ddd;
+                padding:12px;
+                text-align: center;
+            }
+            th{
+                background:#222 ;
+                color:white;
+            }
+            footer{
+                text-align: center;
+                padding: 15px;
+                background:#222;
+                color:#fff;
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <hedaer>
+            <h1>Welcome to Fashion Store</h1>
+            <p>yourvone-stop shop for stylish fashion!</p>
+        </hedaer>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">Accesssories</a>
+            <a href="#">Contract</a>
+        </nav>
+
+        <div class="container">
+            <h2>Our collection</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="https://via.placeholder.com/200*200" alt="product 1">
+                    <h3>Casual shirt </h3>
+                    <p>Price: $25</p>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/200*200" alt="product 2">
+                    <h3>Denim jeans</h3>
+                    <p>Price: $40</p>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/200*200" alt="product 3">
+                  <h3>Leather jacket</h3>
+                  <p>Price: $85</p>
+                </div>
+            </div>
+            <h2> Upcoming sale offers</h2>
+            <table>
+                <tr>
+                    <th>Offer</th>
+                    <th>Discount</th>
+                    <th>Valid Until</th>
+                </tr>
+                <tr>
+                    <td>Summer Sale</td>
+                    <td>30% Off</td>
+                    <td>15 Oct 2025</td>
+                </tr>
+                <tr>
+                    <td>Buy 2 Get 1 Free</td>
+                    <td>Special Deal</td>
+                    <td>20 Oct 2025</td>
+                </tr>
+                <tr>
+                    <td>student Discount</td>
+                    <td>15% Off</td>
+                    <td>31 Dec 2025</td>
+                </tr>
+            </table>
+
+            <h2>Why Shop With Us?</h2>
+            <p style="text-align: center; max-width: 600px; margin: auto;">
+                We offer high-quality fashion at affordable prices. Enjoy fast delivery,
+                    easy returns, and exclusive discounts only at Fashion Store.
+            </p>
+        </div>
+        <footer>
+            <p>@ 2025 Fashion Store | All Rights Reserved</p>
+        </footer>
+    </body>
+</html>
